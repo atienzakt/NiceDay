@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         List<Card> contents = new ArrayList<Card>();
-        contents.add(new Card("Beach","Beach",R.drawable.beach,"Beach"));
-        contents.add(new Card("Flower","Flower",R.drawable.flower,"Flower"));
-        contents.add(new Card("Garden","Garden",R.drawable.garden,"Garden"));
-        contents.add(new Card("Sakura","Sakura",R.drawable.sakura,"Sakura"));
-        contents.add(new Card("Sunset","Sunset",R.drawable.sunset,"Sunset"));
+        contents.add(new Card("Beach","H",R.drawable._1,"Beach"));
+        contents.add(new Card("Flower","A",R.drawable._2,"Flower"));
+        contents.add(new Card("Beach","P",R.drawable._1,"Beach"));
+        contents.add(new Card("Flower","P",R.drawable._2,"Flower"));
+        contents.add(new Card("Beach","Y",R.drawable._1,"Beach"));
+
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.base_recycler);
         LinearLayoutManager llm = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         recyclerView.setLayoutManager(llm);

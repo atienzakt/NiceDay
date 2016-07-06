@@ -1,11 +1,14 @@
 package practice.katienza.niceday;
 
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -28,10 +31,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.RecycleViewHol
 
     @Override
     public void onBindViewHolder(RecycleViewHolder holder, int position) {
-        holder.details.setText(contents.get(position).getDetails());
         holder.title.setText(contents.get(position).getTitle());
         holder.guide.setText(contents.get(position).getGuide());
-        holder.src.setBackgroundResource(contents.get(position).getSrc());
+        //holder.src.setImageDrawable(contents.get(position).getSrc());
     }
 
     @Override
@@ -43,15 +45,10 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.RecycleViewHol
 
         private TextView guide;
         private TextView title;
-        private ImageView src;
-        private TextView details;
-
         private RecycleViewHolder(View itemView) {
             super(itemView);
             guide = (TextView) itemView.findViewById(R.id.browse_guide);
             title = (TextView) itemView.findViewById(R.id.card_title);
-            src = (ImageView) itemView.findViewById(R.id.picture);
-            details = (TextView) itemView.findViewById(R.id.extra_text);
         }
     }
 }

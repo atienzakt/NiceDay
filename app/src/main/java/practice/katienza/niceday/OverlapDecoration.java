@@ -9,7 +9,7 @@ import android.view.View;
  */
 public class OverlapDecoration extends RecyclerView.ItemDecoration {
 
-    private final static int leftOverlap = -90;
+    private final static int leftOverlap = 0;
 
     @Override
     public void getItemOffsets (Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
