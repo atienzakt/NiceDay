@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import com.squareup.picasso.Picasso;
 
@@ -45,10 +46,17 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.RecycleViewHol
 
         private TextView guide;
         private TextView title;
+        private ViewFlipper flips;
         private RecycleViewHolder(View itemView) {
             super(itemView);
             guide = (TextView) itemView.findViewById(R.id.browse_guide);
             title = (TextView) itemView.findViewById(R.id.card_title);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
         }
     }
 }

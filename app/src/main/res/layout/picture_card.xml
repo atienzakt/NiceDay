@@ -1,56 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/black_overlay"
-    android:layout_margin="5dp">
-    <RelativeLayout
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        android:layout_margin="5dp">
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Nice\nDay"
-            android:id="@+id/textView"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:textAlignment="center"/>
-
-        <practice.katienza.niceday.VerticalTextView
-            android:layout_width="wrap_content"
+    android:layout_margin="10dp">
+        <RelativeLayout
+            android:id="@+id/spine"
+            android:orientation="vertical"
+            android:layout_width="55dp"
             android:layout_height="match_parent"
-            android:rotation="180"
-            android:text="Card Browse Guide"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textAlignment="center"
-            android:id="@+id/browse_guide"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/card_title" />
+            android:background="#afabab"
+            android:padding="5dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textAlignment="center"
-            android:id="@+id/card_title"
-            android:text="H"
-            android:background="@color/material_deep_teal_500"
-            android:allowUndo="true"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_below="@+id/textView"
-            android:textSize="30dp"
-            android:layout_centerHorizontal="true"
-            android:padding="10dp"
-            android:paddingRight="20dp"
-            android:paddingLeft="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
 
-    </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Nice\nDay"
+                    android:id="@+id/textView"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:textSize="15dp" />
 
+                <practice.katienza.niceday.VerticalTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rotation="180"
+                    android:text="Card Browse Guide"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textAlignment="center"
+                    android:id="@+id/browse_guide"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/card_title"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textAlignment="center"
+                    android:id="@id/card_title"
+                    android:text="H"
+                    android:background="@color/material_deep_teal_500"
+                    android:allowUndo="true"
+                    android:layout_gravity="center_horizontal|top"
+                    android:layout_below="@+id/textView"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="35dp" />
+            </RelativeLayout>
+        </RelativeLayout>
 </FrameLayout>
